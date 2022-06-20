@@ -1,0 +1,7 @@
+{% extends 'photo/index.html' %}
+{% load static %}
+{% block content %}
+    <p>あなたに似合いそうな髪型はこれ</p>
+    <p>{{ kind }}</p>
+    <img src={{ path }}>
+{% endblock content %}

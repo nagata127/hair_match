@@ -1,0 +1,19 @@
+{% for lists in lists %}
+<tr><td>{{ lists.photo }}</td></tr>
+{% endfor %}
+
+<p>{{ path }}</p>
+<p>{{ img }}</p>
+<p>{{ images }}</p>
+{{ MEDEA_URL }}
+
+<tr><td>{{ images.photo.path }}</td></tr>
+<img src={{images.photo.url}}>
+
+<p>{{ base }}</p>
+<p>{{ img_path }}</p>
+
+{% comment %} {% for image in images %}
+<tr><td>{{ image.photo.path }}</td></tr>
+<img src={{image.photo.url}}>
+{% endfor %} {% endcomment %}
